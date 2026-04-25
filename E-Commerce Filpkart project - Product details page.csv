@@ -1,0 +1,77 @@
+,,,,,,,
+S.NO,Test case ID,Test scenrio,Testcase Tittle,Test case step,Expect Result,Actual Result,Status
+1,TC_01,Product details,Verify product details are displayed correctly,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (for example: mobile)
+4.Click on any product from the search results","1.Product name, price, description, and specifications should be displayed correctly
+2.No missing or incorrect information",System displayed correct product details without any missing information,pass
+2,TC_02,Product details,Verify product image display and zoom functionality,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (for example: mobile)
+4.Click on any product to open the product details page
+5.View product images
+6.Tap on the image and use zoom functionality
+","1.Images should load properly
+2.Zoom functionality should work
+3.No blur or distortion",Images loaded properly and zoom worked as expected,pass
+3,TC_03,Product details,Validate the product description,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (for example: mobile)
+4.Click on any product to open the product details page
+5.Check the product description section
+","1.Product description should be displayed properly
+2.Description should be clear and readable
+3.Information should match the selected product",Product description is displayed clearly and matches the selected product,pass
+4,TC_04,Product details,Verify Buy Now functionality,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (for example: mobile)
+4.Click on any product to open the product details page
+5.Click on Buy Now
+",User should be redirected to checkout/payment page,User is redirected to the checkout page with the selected product,pass
+5,TC_05,Product details,Verify product price correctness,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (for example: mobile)
+4.Note the product price on the search results page
+5. Click on product
+6. Compare price","Price should match with product listing page
+Discount (if any) should be correctly applied",Product price matches on both pages and discount applied correctly,pass
+6,TC_06,Product details,Verify product stock availability,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (for example: mobile)
+4.Click on any product to open the product details page
+5.Check the product availability status",Product should show In Stock / Out of Stock status correctly,System displayed correct stock availability status (In Stock/Out of Stock),pass
+7,TC_07,Product details,Verify Customer ratings and reviews,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (for example: mobile)
+4.Click on any product to open the product details page
+5.Scroll to ratings & reviews section
+","1.Ratings and reviews should be displayed
+2.Reviews should be visible with user comments",Ratings and reviews are displayed with user comments correctly,pass
+8,TC_08,Product details,"Verify product variants (size, color, etc.)","1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""t-shirt"" or ""mobile"")
+4.Click on any product to open the product details page
+5.Select different variants (e.g., size, color, storage)","1.Product details should update based on selected variant
+2.Price should change if applicable
+3.Product image should change according to selected color/variant",Product details updated correctly based on selected variant,pass
+9,TC_09,Product details,Verify the Delivery Details,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""mobile"")
+4.Click on any product to open the product details page
+5.Enter a valid PIN code
+6.Click on Check / Apply
+","1.Delivery date and availability should be displayed correctly
+2.Availability for delivery to the entered pincode should be shown
+3.Delivery options (e.g., Free Delivery / Fast Delivery) should be visible",Delivery details displayed correctly based on entered pincode,pass
+10,TC_10,Product details,Verify seller details,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""mobile"")
+4.Click on any product to open the product details page
+5.Navigate to the Seller details section","Seller name, rating, and details are displayed correctly",Seller details are displayed correctly,pass
+11,TC_11,Product details,Validate Product Share icon,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""mobile"")
+4.Click on any product to open the product details page
+5.Click on share icon ","1.Share options should be displayed (e.g., WhatsApp, Email, Copy Link, etc.)
+2.User should be able to share the product successfully
+3.Shared link should open the correct product page",Share options displayed and product shared successfully,pass
