@@ -1,0 +1,44 @@
+,,,,,,,
+S.NO,Test case ID,Test scenrio,Testcase Tittle,Test case step,Expect Result,Actual Result,Status
+1,TC_01,Login credentials,Validate Login with empty fields,"1.Open the Flipkart application
+2.Navigate to the Login Page
+3.leave email & phone fields empty
+4.Click on the Login button","Error message should be displayed for required fields (e.g., “Email/Mobile is required”)",System displayed error message for empty fields,pass
+2,TC_02,Login credentials,Validate login with already registered email,"1.Open the Flipkart application
+2.Navigate to the Login Page
+3.Enter an existing email address into the email field
+4.Click on the Login button","Error message should be displayed for ""Email is already registered""",Error message displayed correctly,pass
+3,TC_03,Login credentials,Validate login with existing mobile number,"1.open the Flipkart application
+2.Nagivate to the Login  page
+3.Enter the registered phone number into the mobile number field
+4.Click on the Login button","Error messages should be displayed for:
+""Mobile Number already registered"" ",Error messages displayed correctly,pass
+4,TC_04,Login credentials,Validate login with unregistered email address,"1.open the Flipkart application
+2.Navigate to the Login  page
+3.Enter an unregister email address into the Email field
+4.Click on the Login button
+","Error message should be displayed for ""Email address not found""",Error message displayed correctly,pass
+5,TC_05,Login credentials,Validate login wtih empty OTP field,"1.Open the Flipkart application
+2.Navigate to the login Page
+3.Enter the valid Email & mobile number into the field
+4.Navigate to the OTP page
+5.Leave OTP field empty
+6.Click on Login button","Error message should be displayed for ""Please enter  OTP""",Error messages displayed correctly,pass
+6,TC_06,Login credentials, Validate login with invaild OTP  field,"1.Open the Flipkart application
+2.Navigate to the login Page
+3.Enter the valid Email & mobile number into the field
+4.Navigate to the OTP page
+5.Enter invalid OTP into the OTP field
+6.Click on Login button","Error message should be displayed for ""Invalid OTP, please try again""",Error messages displayed correctly,pass
+7,TC_07,Login credentials,Validate login with expired OTP,"1.Open the Flipkart application
+2.Navigate to the login Page
+3.Enter the valid  mobile number into the field
+4.Navigate to the OTP page
+5.Enter the expired OTP into the OTP field
+6.Click on Login button","Error message should be displayed for ""OTP expired""",System displayed “OTP expired” and login failed,pass
+8,TC_08,Login credentials,Validate login with valid credentials,"1.Open the Flipkart application
+2.Navigate to the login Page
+3.Enter the valid  mobile number into the field
+4.Navigate to the OTP page
+5.Enter the valid OTP into the OTP field
+6.Click on Login button",User should be logged in successfully,User logged in successfully and redirected to homepage,pass
