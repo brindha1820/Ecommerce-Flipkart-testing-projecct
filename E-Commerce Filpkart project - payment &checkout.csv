@@ -1,0 +1,74 @@
+,,,,,,,
+,,,,,,,
+S.NO,Test case ID,Test scenrio,Testcase Tittle,Test case step,Expect Result,Actual Result,Status
+1,TC_01,Order Summary Details,Verify Order Summary Details,"1. Open the Flipkart application
+2. Register and login with valid credentials
+3.Select the product 
+4.Click on the buy button
+5.Navigate to the order summery page","System should display delivery address, product image, product name, and price details correctly",Order summary displayed correctly with all details,pass
+2,TC_02,payment ,Verify UPI Payment Method Details,"1. Open the Flipkart application
+2. Register and login with valid credentials
+3.Select the product 
+4.Click on the buy button
+5.Navigate to the order summery page 
+6.Check the delivery address,product and price details 
+7.Click on continue button
+8.Select the UPI payment method option","User should be able to:
+1.Enter UPI ID (e.g., name@upi)
+OR select available UPI apps
+2.User should be able to proceed with payment after valid input",User is able to enter UPI ID and proceed to payment successfully,pass
+3,TC_03,payment ,Verify Order Placement via Credit Card,"1. Open the Flipkart application
+2. Register and login with valid credentials
+3.Select the product 
+4.Click on the buy button
+5.Navigate to the order summery page 
+6.Check the delivery address,product and price details 
+7.Click on continue button
+8.Select the credit card option
+9.Enter valid credit card details (card number, expiry date, CVV)
+10.Complete the OTP verification
+11.Click on Pay Now / Place Order","1.Order should be placed successfully
+2.Order confirmation page should be displayed with Order ID
+3.Confirmation message should be sent via SMS/Email","Payment completed successfully, order confirmation page displayed with Order ID, and confirmation sent via SMS/Email",pass
+4,TC_04,payment ,Verify Order Placement via cash on delivery,"1. Open the Flipkart application
+2. Register and login with valid credentials
+3.Select the product 
+4.Click on the buy button
+5.Navigate to the order summery page 
+6.Check the delivery address,product and price details 
+7.Click on continue button
+8.Select Cash on Delivery option
+9.Click on the place order button
+","1.Order should be placed successfully
+2.Order confirmation page should be displayed with Order ID",Order placed successfully and order confirmation page displayed,pass
+5,TC_05,Payment ,Validate valid coupon code,"1. Open the Flipkart application
+2. Register and login with valid credentials
+3.Select the product 
+4.Click on the buy button
+5.Navigate to the order summery page 
+6.Check the delivery address,product and price details 
+7.Click on continue button
+8.Enter the valid coupon code 
+9.Click on Apply","1.Coupon code should be applied successfully
+2.Discount amount should be displayed
+3.Total price should be updated correctly after applying coupon
+4.Success message should be displayed (e.g., “Coupon applied successfully”)","Coupon applied successfully, discount reflected, and total price updated correctly",pass
+6,TC_06,Payment ,Validate invalid coupon code,"1. Open the Flipkart application
+2. Register and login with valid credentials
+3.Select the product 
+4.Click on the buy button
+5.Navigate to the order summery page 
+6.Check the delivery address,product and price details 
+7.Click on continue button
+8.Enter the invalid coupon code 
+9.Click on Apply",System should display error message such as “Invalid coupon code” and should not apply discount,Error message displayed for invalid coupon,pass
+7,TC_07,Payment ,Validate payment failure during checkout,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search and select any product
+4.Add the product to cart
+5.Click on Buy Now
+6.Verify order summary details (address, price, product)
+7.Click on Continue
+8.Select any payment method (e.g., UPI / Card / Net Banking)
+9.Enter invalid payment details OR simulate network failure
+10.Click on Pay Now","System should display “Payment failed, please try again” and user should remain on payment page","System displayed “Payment failed, please try again” message and user remained on the payment page without placing the orde",pass
