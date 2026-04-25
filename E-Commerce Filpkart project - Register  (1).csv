@@ -1,0 +1,70 @@
+,,,,,,,
+Project,,Flipkart E-Commerce Application,,,,,
+Document Type,,Test Case Specification,,,,,
+Version,,1,,,,,
+Prepared By,,Brindha,,,,,
+Date,,March 2026,,,,,
+Total Test Case,,50+,,,,,
+,,,,,,,
+,,,,,,,
+S.NO,Test case ID,Test scenrio,Testcase Tittle,Test case step,Expect Result,Actual Result,Status
+1,TC_01,Registration,Validate registration with empty email/phone field,"1.Open the Flipkart application
+2.Navigate to the Register Page
+3.leave email & phone fields empty
+4.Click on the continue button
+","Error message should be displayed for ""Email or phone number is required""",System displayed error message for empty fields,pass
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+2,TC_02,Registration,Validate registration with existing email field,"1.Open the Flipkart application
+2.Navigate to the Register Page
+3.Enter an existing email address into the email field
+4.Click on the continue button","Error message should be displayed for ""Email is already registered""",Error message displayed correctly,pass
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+3,TC_03,Registration,Validate email field with invalid email (without '@'),"1.Open the Flipkart application
+2.Navigate to the Register Page
+3.Enter an email address without '@' symbol (e.g., abcgmail.com)
+4.Click on the continue button 
+","System should display an error message indicating invalid email format
+",System displayed error message for invalid email format,pass
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+4,TC_04,Registration,Validate registration with  invalid mobile number,"1.Open the Flipkart application
+2.Navigate to the Register Page
+3.Enter the invalid mobile number into the mobile field
+4.Click on the continue button
+","Error message should be displayed for ""Please enter a valid  mobile number""",Error message displayed correctly,pass
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+5,TC_05,Registration,Validate registration with existing mobile number ,"1.Open the Flipkart application
+2.Navigate to the Register Page
+3.Enter the existing mobile number into the mobile field
+4.Click on the continue button","Error message should be displayed for ""Mobile number is already registered""",Error message displayed correctly,pass
+6,TC_06,Registration,Validate registration with empty OTP field,"1.Open the Flipkart application
+2.Navigate to the Register Page
+3.Enter the valid number into the mobile number field
+4.Navigate to the OTP page
+5.Leave OTP field empty
+6.Click on Signup button","Error message should be displayed for ""Please enter OTP""",Error message displayed correctly,pass
+7,TC_07,Registration,Validate registration with invalid OTP  field,"1.Open the Flipkart application
+2.Navigate to the Register Page
+3.Enter the valid number into the mobile number field
+4.Navigate to the OTP page
+5.Enter the invalid OTP into the OTP field
+6.Click on Signup button","Error message should be displayed for ""Invalid OTP, please try again""",Error message displayed correctly,pass
+8,TC_08,Registration,Validate registration with valid otp ,"1.Open the Flipkart application
+2.Navigate to the Register Page
+3.Enter the valid number into the mobile number field
+4.Navigate to the OTP page
+5.Enter the valid OTP into the OTP field 
+6.Click on Signup button",User should be registered successfully,User registration completed and redirected to home page,pass
