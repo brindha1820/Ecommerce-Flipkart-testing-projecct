@@ -1,0 +1,87 @@
+,,,,,,,
+S.NO,Test case ID,Test scenrio,Testcase Tittle,Test case step,Expect Result,Actual Result,Status
+1,TC_01,Search ,Validate search with valid product,"1. Open the Flipkart application
+2. Register and login with valid credentials
+3. Tap on the search bar
+4. Enter a valid product name (e.g., ""iPhone"")
+5. Click on the search icon","Relevant products related to ""iPhone"" should be displayed on the results page","Relevant products related to ""iPhone"" are displayed on the search results page",pass
+2,TC_02,Search,Validate search functionality with misspelled keyword,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Tap on the search bar
+4.Enter a misspelled keyword (e.g., ""iphnoe"" instead of ""iPhone"")
+5.Click on the search icon
+","System should display:
+Auto-corrected results OR
+Relevant product suggestions related to the intended keyword
+
+",System displays relevant product suggestions for the misspelled keyword,pass
+3,TC_03,Search,Validate search with empty field,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Tap on the search bar
+4.Leave the search filed empty
+5.Click on the search icon
+",System should not perform search,System should not perform search,pass
+4,TC_04,Fliter (search),Validate filtering of products by price range,"
+1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""mobile"")
+4.Tap on the Filter option
+5.Select the price range filter
+6.Set the price range (e.g., ₹10000 – ₹20000)
+7.Click on the Apply button","1.System should display only the products within the selected price range
+2.All listed products should have prices between ₹10000 and ₹20000",Products displayed within selected price range,pass
+5,TC_05,Sort ,Validate sorting of products by price (High to Low),"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""bag"")
+4.Click on the Sort option
+5.Select Price: High to Low","1.Products should be displayed in descending order of price
+2.Highest priced product should appear at the top
+3.Lowest priced product should appear at the bottom",Products sorted in descending order correctly,pass
+6,TC_06,Filter by Brand,Validate filtering of products by Brand,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""mobile"")
+4.Tap on the Filter option
+5.Select the brand (e.g ,poco)
+6.Click on the Apply button
+
+
+","1.System should display only the products within the selected  brand
+",Products displayed belong to the selected brand,pass
+7,TC_07,Filter by Availability,Validate filtering of products by availability,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""mobile"")
+4.Tap on the Filter option
+5.Select the avaliability
+6.Click on the Apply button","1.System should display only the products that are in stock
+2.Out-of-stock products should not be displayed",Products displayed are only in-stock items,pass
+8,TC_08,Filter by Delivery option,Validate filtering of product by Delivery option,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g.,""mobile"")
+4.Tap on the Filter option
+5.Select a Delivery option(e.g.,""Free Delivery"" or ""Fast Delivery"")
+6.Click on the Apply button","System should display only the products matching the selected delivery option
+
+1.If Free Delivery is selected → only free delivery products shown
+2.If Fast Delivery is selected → only fast delivery products shown",Products displayed match the selected delivery option,pass
+9,TC_09,Filter by Customer rating,Validate Filtering of product by customer rating,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""mobile"")
+4.Tap on the Filter option
+5.Select customer rating (e.g., 4★ & above)
+6.Click on the Apply button
+","System should display only the products with selected rating and above
+All listed products should have  4★ or higher rating",Products displayed have rating 4* and above,pass
+10,TC_10,Filter by category ,Validate Filtering of product by category,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Search for any product (e.g., ""mobile"")
+4.Tap on the Filter option
+5.Select a category (e.g, ""Smartphone"")
+6.Click on the Apply button
+","System should display only the products belonging to the selected category
+",Products displayed belong to the selected category,pass
+11,TC_11,search,Validate search with invalid or special characters,"1.Open the Flipkart application
+2.Login with valid credentials
+3.Tap on the search bar
+4.Enter the special charaters(!@#$$) into the search bar
+5.Click on the search icon
+",Showing “No results found” message,System shows “No results found” without any error,pass
